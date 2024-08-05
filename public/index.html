@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win-Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="team-red">
+            <h2 id="team-red-name" contenteditable="true">Team Rot</h2>
+            <div id="red-timer">
+                <span id="red-timer-display">00:00</span>
+                <button id="red-timer-start">&#9654;</button>
+                <button id="red-timer-stop">&#9632;</button>
+            </div>
+            <div id="red-games">
+                <h3>Spiele</h3>
+                <!-- Spiele-Liste hier einfügen -->
+            </div>
+        </div>
+
+        <div id="game-manager">
+            <h2>Spiele hinzufügen</h2>
+            <input type="text" id="new-game-name" placeholder="Spielname">
+            <button id="add-game">&#43;</button>
+        </div>
+
+        <div id="team-blue">
+            <h2 id="team-blue-name" contenteditable="true">Team Blau</h2>
+            <div id="blue-timer">
+                <span id="blue-timer-display">00:00</span>
+                <button id="blue-timer-start">&#9654;</button>
+                <button id="blue-timer-stop">&#9632;</button>
+            </div>
+            <div id="blue-games">
+                <h3>Spiele</h3>
+                <!-- Spiele-Liste hier einfügen -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
